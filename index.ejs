@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-ninja</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <% include ('./paetials/nav.ejs') %>
+    <nav>
+        <div class="site-title">
+            <a href="/"> <h1>blog ninja</h1></a>
+            <p> a net ninja site</p>
+        </div>
+        <ul>
+            <li>
+                <a href="/">blogs</a>
+                <a href="/">about</a>
+                <a href="/">create page</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="about-content">
+        <h2>
+            about us
+        </h2>
+        <% if(blogs.length > 0){
+            %>
+            <% blogs.forEach(blog=> {
+                %> 
+            })
+            <h3 class="title">
+                <% blogs.title
+            </h3>
+            <p class="snippets">
+                <% blogs.snippets
+            </p>
+        }
+        <p>lorem
+        </p>
+        <p> lorem </p>
+        <p>lorem </p>
+    </div>
+</body>
+</html>
